@@ -9,8 +9,13 @@ from geo import Geopoint
 # latitude = 32.98226
 # longitude = -96.53057
 
-locations = [[24.850134, 67.032592], [32.98226, -96.53057], [50.79052100216682, -1.0915188523036652]]
+locations = [
+    [24.850134, 67.032592],
+    [32.98226, -96.53057],
+    [50.79052100216682, -1.0915188523036652],
+]
 
+# Portsmouth
 mymap = Map(location=[50.79052100216682, -1.0915188523036652])
 
 for loc in locations:
@@ -27,7 +32,7 @@ for loc in locations:
     <hr style="margin:1px">
     {forecast[3][0][-8:-6]}: {round(forecast[3][1])}°F <img src="http://openweathermap.org/img/wn/{forecast[3][-1]}@2x.png" width="35">
     <hr style="margin:1px">
-    """
+    """  # noqa501
 
     # popup = Popup(str(geopoint.get_weather()[0]))
     popup = Popup(popup_content, max_width=400)
@@ -35,4 +40,4 @@ for loc in locations:
 
     geopoint.add_to(mymap)
 
-mymap.save('map.html')
+mymap.save("map.html")
