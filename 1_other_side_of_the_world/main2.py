@@ -18,8 +18,8 @@ locations = [
 # Portsmouth
 mymap = Map(location=[50.79052100216682, -1.0915188523036652])
 
-for loc in locations:
-    geopoint = Geopoint(latitude=loc[0], longitude=loc[1])
+for lat, lon in locations:
+    geopoint = Geopoint(latitude=lat, longitude=lon)
 
     forecast = geopoint.get_weather()
 
