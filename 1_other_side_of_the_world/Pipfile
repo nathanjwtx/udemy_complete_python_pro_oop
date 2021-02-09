@@ -8,6 +8,7 @@ sunnyday = "*"
 pytz = "*"
 timezonefinder = "*"
 folium = "*"
+pre-commit = "*"
 
 [dev-packages]
 

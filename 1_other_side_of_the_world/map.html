@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_93a25fdb67dd461184de06851a5767c0 {
+                #map_e531ac6ea8de4b7381ad1b078c597ac9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_93a25fdb67dd461184de06851a5767c0" ></div>
+            <div class="folium-map" id="map_e531ac6ea8de4b7381ad1b078c597ac9" ></div>
         
 </body>
 <script>    
     
-            var map_93a25fdb67dd461184de06851a5767c0 = L.map(
-                "map_93a25fdb67dd461184de06851a5767c0",
+            var map_e531ac6ea8de4b7381ad1b078c597ac9 = L.map(
+                "map_e531ac6ea8de4b7381ad1b078c597ac9",
                 {
-                    center: [32.98226, -96.53057],
+                    center: [50.79052100216682, -1.0915188523036652],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
@@ -55,26 +55,64 @@
 
         
     
-            var tile_layer_ecbb088817534002be90ddc5c618fbc3 = L.tileLayer(
+            var tile_layer_1a61d24f7e384347896363ab323509f8 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_93a25fdb67dd461184de06851a5767c0);
+            ).addTo(map_e531ac6ea8de4b7381ad1b078c597ac9);
         
     
-            var marker_e42efdf962e84f3db0c4ca94b6870a7d = L.marker(
+            var marker_8473c3190eb2499ca2bddeefd2c89aeb = L.marker(
+                [24.850134, 67.032592],
+                {}
+            ).addTo(map_e531ac6ea8de4b7381ad1b078c597ac9);
+        
+    
+        var popup_cdadc384ed994052a05e2eac709f0140 = L.popup({"maxWidth": 400});
+
+        
+            var html_704121a92c004ba98f0460760f976e87 = $(`<div id="html_704121a92c004ba98f0460760f976e87" style="width: 100.0%; height: 100.0%;">     15: 73°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     18: 71°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     21: 69°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     00: 66°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     </div>`)[0];
+            popup_cdadc384ed994052a05e2eac709f0140.setContent(html_704121a92c004ba98f0460760f976e87);
+        
+
+        marker_8473c3190eb2499ca2bddeefd2c89aeb.bindPopup(popup_cdadc384ed994052a05e2eac709f0140)
+        ;
+
+        
+    
+    
+            var marker_0d600350d7a24130a3a4a60ac3651d36 = L.marker(
                 [32.98226, -96.53057],
                 {}
-            ).addTo(map_93a25fdb67dd461184de06851a5767c0);
+            ).addTo(map_e531ac6ea8de4b7381ad1b078c597ac9);
         
     
-        var popup_1faec4afae2441e58731ea33ed438d09 = L.popup({"maxWidth": 400});
+        var popup_0beea55cd9d840dd83f62c195022e523 = L.popup({"maxWidth": 400});
 
         
-            var html_8a44efdd51034616a2d7cd501199d95b = $(`<div id="html_8a44efdd51034616a2d7cd501199d95b" style="width: 100.0%; height: 100.0%;"> 15: 48°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin:1px"> 18: 55°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin:1px"> 21: 59°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin:1px"> 00: 59°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin:1px"> </div>`)[0];
-            popup_1faec4afae2441e58731ea33ed438d09.setContent(html_8a44efdd51034616a2d7cd501199d95b);
+            var html_3f9af32b0957460f88be62694914d8fa = $(`<div id="html_3f9af32b0957460f88be62694914d8fa" style="width: 100.0%; height: 100.0%;">     15: 33°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35">     <hr style="margin:1px">     18: 41°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35">     <hr style="margin:1px">     21: 49°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35">     <hr style="margin:1px">     00: 50°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35">     <hr style="margin:1px">     </div>`)[0];
+            popup_0beea55cd9d840dd83f62c195022e523.setContent(html_3f9af32b0957460f88be62694914d8fa);
         
 
-        marker_e42efdf962e84f3db0c4ca94b6870a7d.bindPopup(popup_1faec4afae2441e58731ea33ed438d09)
+        marker_0d600350d7a24130a3a4a60ac3651d36.bindPopup(popup_0beea55cd9d840dd83f62c195022e523)
+        ;
+
+        
+    
+    
+            var marker_ee562f3ac7cd447a99174641fd6bdd2b = L.marker(
+                [50.79052100216682, -1.0915188523036652],
+                {}
+            ).addTo(map_e531ac6ea8de4b7381ad1b078c597ac9);
+        
+    
+        var popup_bb63587f34834d329fa4ae9d8b546b97 = L.popup({"maxWidth": 400});
+
+        
+            var html_ca7529189a1a4dada8ed8b83d3c5a1ef = $(`<div id="html_ca7529189a1a4dada8ed8b83d3c5a1ef" style="width: 100.0%; height: 100.0%;">     15: 33°F <img src="http://openweathermap.org/img/wn/04d@2x.png" width="35">     <hr style="margin:1px">     18: 32°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     21: 32°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     00: 31°F <img src="http://openweathermap.org/img/wn/04n@2x.png" width="35">     <hr style="margin:1px">     </div>`)[0];
+            popup_bb63587f34834d329fa4ae9d8b546b97.setContent(html_ca7529189a1a4dada8ed8b83d3c5a1ef);
+        
+
+        marker_ee562f3ac7cd447a99174641fd6bdd2b.bindPopup(popup_bb63587f34834d329fa4ae9d8b546b97)
         ;
 
         
